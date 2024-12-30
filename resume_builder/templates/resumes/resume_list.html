@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Resumes</title>
+</head>
+<body>
+    <h2>Your Resumes</h2>
+    <ul>
+        {% for resume in resumes %}
+            <li>{{ resume.name }} - {{ resume.email }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
